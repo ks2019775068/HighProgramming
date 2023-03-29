@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kssw</title>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <style>
+        /*banner*/
+
+        #container {
+            overflow: hidden;
+            margin: 0 auto;
+            /**position: relative;**/
+        }
+
+        .img {
+            display: none;
+            width: 50%;
+            height: auto;
+            margin: 10px auto 10px auto;
+        }
+
+        .img.on {
+            display: block;
+        }
+
+        /*banner end*/
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-theme="b">
+        <div data-role="page" id="home">
+            <div data-role="header" data-theme="b">
+                <h1 style="margin: 10px;">경성대 소프트웨어학과</h1>
+                <button id="vibration"><i class="material-icons">vibration</i></button>            </div>
+            <div data-role="content" style="text-align:center">
+                <div id="container">
+                    <div id="inner">
+                        <img class="img" src="./img1.jpg">
+                        <img class="img" src="./img2.jpg">
+                        <img class="img" src="./img3.jpg">
+                    </div>
+                </div>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#intro">학과 소개</a></li>
+                    <li><a href="#video" data-rel="dialog">홍보영상</a></li>
+                    <li><a href="#freshman" data-rel="dialog">학과 정보</a></li>
+                    <li><a href="#map">오시는 길</a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <h1>2023-1 High Programming 2019775068 Ha Subin</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="intro">
+            <div data-role="header" data-theme="b">
+                <a href="#home" data-icon="arrow-l" data-direction="reverse">HOME</a>
+                <h1 style="margin: 5px;">학과 소개</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h1>학과 대표 전공역량</h1>
+                        <span class="glyphicon glyphicon-menu-right"> 정보 기술 전략·계획</span><br><br>
+                        <span class="glyphicon glyphicon-menu-right"> 정보기술 개발 및 운영 관리</span><br><br>
+                        <span class="glyphicon glyphicon-menu-right"> 문제해결능력</span>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>교육목표 및 비전</h3>
+                        <p>기존의 IT 산업이 하드웨어를 개발하고 발전시키는 분야에 집중했다면 미래의 산업은 인공지능, 게임, 모바일기기, 빅데이터 등의 4차 산업혁명을 위한 소프트웨어 분야를
+                            강화해야 하는 시 대에 이르렀다.
+                            소프트웨어학과는 컴퓨터과학 분야의 기초이론을 바탕으로 기업에서 요구 하는 최첨단 기술을 배양하여 창의적이고 실무 전문성을 갖춘 4차 산업혁명을 주도하는 소프트웨어
+                            인재를 양성할 것이다.</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>우리 전공 자랑</h3>
+                        <p style="font-style: italic; color: rgb(255, 252, 199);">세미나형 수업과 교수와의 소규모 동아리 수업</p>
+                        <p>학교 과제인 LINC+사업의 지원을 통해서, 세미나 형태의 수업, 소규모 동아리 수업, 외주 전문가가 참여하는 수업 등 창의적인 수업을 진행한다.
+                            업체의 동향 파악 및 취업 목적의 외 부 초청 (외부 인사 및 졸업생) 세미나를 수시로 개최하여 저학년부터 학생들이 주도적으로 자신의 진로를 개척하는 분위기를
+                            제공한다.
+                            3, 4학년에 특정 업체와 취업 및 현장 중심 목적의 교육 시스템 IPP 를 통하여 산업 현장의 요구를 반영하고, 졸업과 동시에 취업을 하 는 프로세스를 운영한다.
+                        </p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>전공대표 동아리</h3>
+                        <div data-role="collapsible" data-collapsed="false">
+                            <h4>멀티미디어정보통신 랩실</h4>
+                            <p>멀티미디어정보통신에 관심있는 학생들이 모여 공부하고 배우며 서로의 정보를 공유하는 연구실</p>
+                        </div>
+                        <div data-role="collapsible" data-collapsed="false">
+                            <h4>데이터베이스 랩실</h4>
+                            <p>데이터베이스에 관심있는 학생들이 모여 공부하고 배우며 서로의 정보를 공유하는 연구실</p>
+                        </div>
+                        <div data-role="collapsible" data-collapsed="false">
+                            <h4>컴퓨터시스템 랩실</h4>
+                            <p>언어처리에 관심있는 학생들이 모여 공부하고 배우며 서로의 정보를 공유하는 연수실</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <h1>2023-1 High Programming 2019775068 Ha Subin</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="video" data-theme="b">
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>홍보 영상</h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-bar ui-bar-a">소개영상 1</div><br />
+                <li><video controls width="100%" preload="metadata">
+                        <source src="./video1.mp4" type="video/mp4">
+                    </video></li><br />
+                <div class="ui-bar ui-bar-a">소개영상 2</div><br />
+                <li><video controls width="100%" preload="metadata">
+                        <source src="./video2.mp4" type="video/mp4">
+                    </video></li>
+            </div>
+            <div data-role="footer" data-theme="b">
+            </div>
+        </div>
+
+        <!--chart-->
+        <div data-role="page" id="freshman">
+            <div data-role="header">
+                <h1>신입생 경쟁률</h1>
+            </div>
+            <canvas id="chart1" style="width:100%;max-width:700px; margin-top: 10px;"></canvas>
+            <p style="font-size:xx-small; margin-left: 5px;">(단위) x:년도 y:명</p>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">Home</a>
+                <a href="#freshman" data-rel="dialog" data-transition="slide">신입생경쟁률</a>
+                <a href="#student" data-rel="dialog" data-transition="slide">재학생수</a>
+                <a href="#personnel" data-rel="dialog" data-transition="slide">입학정원</a>
+                <a href="#scholorship" data-rel="dialog" data-transition="slide">1인당 연간 장학금</a>
+                <a href="#employment" data-rel="dialog" data-transition="slide">취업률</a>
+                <a href="#tuition" data-rel="dialog" data-transition="slide">평균 등록금</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="student">
+            <div data-role="header">
+                <h1>재학생수</h1>
+            </div>
+            <canvas id="chart2" style="width:100%;max-width:700px; margin-top: 10px;"></canvas>
+            <p style="font-size:xx-small; margin-left: 5px;">(단위) x:년도 y:명</p>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">Home</a>
+                <a href="#freshman" data-rel="dialog" data-transition="slide">신입생경쟁률</a>
+                <a href="#student" data-rel="dialog" data-transition="slide">재학생수</a>
+                <a href="#personnel" data-rel="dialog" data-transition="slide">입학정원</a>
+                <a href="#scholorship" data-rel="dialog" data-transition="slide">1인당 연간 장학금</a>
+                <a href="#employment" data-rel="dialog" data-transition="slide">취업률</a>
+                <a href="#tuition" data-rel="dialog" data-transition="slide">평균 등록금</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="personnel">
+            <div data-role="header">
+                <h1>입학정원</h1>
+            </div>
+            <canvas id="chart3" style="width:100%;max-width:700px; margin-top: 10px;"></canvas>
+            <p style="font-size:xx-small; margin-left: 5px;">(단위) x:년도 y:명</p>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">Home</a>
+                <a href="#freshman" data-rel="dialog" data-transition="slide">신입생경쟁률</a>
+                <a href="#student" data-rel="dialog" data-transition="slide">재학생수</a>
+                <a href="#personnel" data-rel="dialog" data-transition="slide">입학정원</a>
+                <a href="#scholorship" data-rel="dialog" data-transition="slide">1인당 연간 장학금</a>
+                <a href="#employment" data-rel="dialog" data-transition="slide">취업률</a>
+                <a href="#tuition" data-rel="dialog" data-transition="slide">평균 등록금</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="scholorship">
+            <div data-role="header">
+                <h1>1인당 연간 장학금</h1>
+            </div>
+            <canvas id="chart4" style="width:100%;max-width:700px; margin-top: 10px;"></canvas>
+            <p style="font-size:xx-small; margin-left: 5px;">(단위) x:년도 y:천원</p>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">Home</a>
+                <a href="#freshman" data-rel="dialog" data-transition="slide">신입생경쟁률</a>
+                <a href="#student" data-rel="dialog" data-transition="slide">재학생수</a>
+                <a href="#personnel" data-rel="dialog" data-transition="slide">입학정원</a>
+                <a href="#scholorship" data-rel="dialog" data-transition="slide">1인당 연간 장학금</a>
+                <a href="#employment" data-rel="dialog" data-transition="slide">취업률</a>
+                <a href="#tuition" data-rel="dialog" data-transition="slide">평균 등록금</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="employment">
+            <div data-role="header">
+                <h1>취업률</h1>
+            </div>
+            <canvas id="chart5" style="width:100%;max-width:700px; margin-top: 10px;"></canvas>
+            <p style="font-size:xx-small; margin-left: 5px;">(단위) x:년도 y:%</p>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">Home</a>
+                <a href="#freshman" data-rel="dialog" data-transition="slide">신입생경쟁률</a>
+                <a href="#student" data-rel="dialog" data-transition="slide">재학생수</a>
+                <a href="#personnel" data-rel="dialog" data-transition="slide">입학정원</a>
+                <a href="#scholorship" data-rel="dialog" data-transition="slide">1인당 연간 장학금</a>
+                <a href="#employment" data-rel="dialog" data-transition="slide">취업률</a>
+                <a href="#tuition" data-rel="dialog" data-transition="slide">평균 등록금</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="tuition">
+            <div data-role="header">
+                <h1>평균 등록금</h1>
+            </div>
+            <canvas id="chart6" style="width:100%;max-width:700px; margin-top: 10px;"></canvas>
+            <p style="font-size:xx-small; margin-left: 5px;">(단위) x:년도 y:천원</p>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">Home</a>
+                <a href="#freshman" data-rel="dialog" data-transition="slide">신입생경쟁률</a>
+                <a href="#student" data-rel="dialog" data-transition="slide">재학생수</a>
+                <a href="#personnel" data-rel="dialog" data-transition="slide">입학정원</a>
+                <a href="#scholorship" data-rel="dialog" data-transition="slide">1인당 연간 장학금</a>
+                <a href="#employment" data-rel="dialog" data-transition="slide">취업률</a>
+                <a href="#tuition" data-rel="dialog" data-transition="slide">평균 등록금</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="map" data-theme="b">
+            <div data-role="header">
+                <a href="#home" class="btn btn-default btn-sm" style="margin: 5px;">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+                <p style="text-align: center; margin-top: 10px; font-size: large;">오시는 길</p>
+            </div>
+            <div data-role="content">
+                <br />
+                <div><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.5403444935846!2d129.0929744509734!3d35.14314258022662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ecedb02a427d%3A0x7dbdfc725b7bf644!2z67aA7IKw6rSR7Jet7IucIOuMgOyXsOygnDPrj5kg6rK97ISx64yA7ZWZ6rWQIOygnDLqs7XtlZnqtIA!5e0!3m2!1sko!2skr!4v1680062035980!5m2!1sko!2skr"
+                        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe></div><br>
+                <span class="glyphicon glyphicon-phone-alt"> 051-663-5140</span><br><br>
+                <a href="https://goo.gl/maps/B3u6Cg13c8dGCP7M9"><span class="glyphicon glyphicon-map-marker">부산광역시 대연제3동
+                        경성대학교 제2공학관(8호관)</span></a><br><br>
+                <a href="https://kscms.ks.ac.kr/software/Main.do"><span class="glyphicon glyphicon-home"> 소프트웨어학과
+                        홈페이지</span></a><br>
+            </div>
+        </div>
+    </div>
+    <!--vibe-->
+    <script>
+        document.getElementById("vibration").addEventListener("click", vibration);
+
+        function vibration() {
+            var time = 2000;
+            navigator.vibrate(time);}
+    </script>
+    <!--home image-->
+    <script>
+    const images = document.querySelectorAll('.img');
+    let current = 0;
+
+    function showSlide() {
+        for (let i = 0; i < images.length; i++) {
+            images[i].classList.remove('on');
+        }
+        current++;
+        if (current > images.length) {
+            current = 1;
+        }
+        images[current - 1].classList.add('on');
+        setTimeout(showSlide, 1500);
+    }
+
+    showSlide();
+    </script>
+    <!--chart-->
+    <script>
+    const xValues1 = [2020, 2021, 2022];
+    const yValues1 = [5.6, 4.1, 7.0];
+
+    new Chart("chart1", {
+        type: "line",
+        data: {
+            labels: xValues1,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues1
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 0, max: 7 } }],
+            }
+        }
+    });
+    </script>
+
+    <script>
+    const xValues2 = [2020, 2021, 2022];
+    const yValues2 = [240.0, 234.0, 234.0];
+
+    new Chart("chart2", {
+        type: "line",
+        data: {
+            labels: xValues2,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues2
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 0, max: 250 } }],
+            }
+        }
+    });
+    </script>
+
+    <script>
+    const xValues3 = [2020, 2021, 2022];
+    const yValues3 = [70.0, 70.0, 50.0];
+
+    new Chart("chart3", {
+        type: "line",
+        data: {
+            labels: xValues3,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues3
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 0, max: 80 } }],
+            }
+        }
+    });
+    </script>
+
+    <script>
+    const xValues4 = [2020, 2021, 2022];
+    const yValues4 = [3487.0, 3819.0, 3975.0];
+
+    new Chart("chart4", {
+        type: "line",
+        data: {
+            labels: xValues4,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues4
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 0, max: 4200 } }],
+            }
+        }
+    });
+    </script>
+
+    <script>
+    const xValues5 = [2020, 2021, 2022];
+    const yValues5 = [53.1, 52.3, 43.6];
+
+    new Chart("chart5", {
+        type: "line",
+        data: {
+            labels: xValues5,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues5
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 0, max: 60 } }],
+            }
+        }
+    });
+    </script>
+
+    <script>
+            const xValues6 = [2020, 2021, 2022];
+            const yValues6 = [7478.0, 7478.0, 7497.0];
+
+            new Chart("chart6", {
+                type: "line",
+                data: {
+                    labels: xValues6,
+                    datasets: [{
+                        fill: false,
+                        lineTension: 0,
+                        backgroundColor: "rgba(0,0,255,1.0)",
+                        borderColor: "rgba(0,0,255,0.1)",
+                        data: yValues6
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    scales: {
+                        yAxes: [{ ticks: { min: 0, max: 8000 } }],
+                    }
+                }
+            });
+    </script>
+</body>
+
+</html>
