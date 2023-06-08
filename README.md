@@ -3,6 +3,7 @@
 <div>
 	<h3>💻Spec💻</h3>
 	<img width="500" height="auto" alt="spec" src="https://user-images.githubusercontent.com/80227900/228855787-f7dec0d9-a0fd-47e4-a0a1-7f83bf5a37b8.png">
+	<h2>페이지 구성</h2>
 </div>
 
 ## main.dart
@@ -56,7 +57,7 @@
 	<p>css_colors package 사용, 배경색 베이지로 변경</p>
 </div>
 
-#### sqflite.dart, sql_helper.dart
+### sqflite.dart, sql_helper.dart
 <div>
 	<img width="300" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/6cef9360-64fc-4997-9209-c55c441a49d1"><img width="300" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/d5f4dd23-ff0f-4739-b9f8-740ee39f71a0"><img width="300" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/d4e90a7e-5404-4616-96fc-f8f45452b621">
 	<p>plus버튼 클릭 시 data 추가</p>
