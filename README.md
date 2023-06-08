@@ -59,7 +59,7 @@
 
 ### sqflite.dart, sql_helper.dart
 <div>
-	<img width="300" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/6cef9360-64fc-4997-9209-c55c441a49d1"><img width="300" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/d5f4dd23-ff0f-4739-b9f8-740ee39f71a0"><img width="300" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/d4e90a7e-5404-4616-96fc-f8f45452b621">
+	<img width="200" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/6cef9360-64fc-4997-9209-c55c441a49d1"><img width="200" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/d5f4dd23-ff0f-4739-b9f8-740ee39f71a0"><img width="200" alt="hobby" src="https://github.com/ks2019775068/HighProgramming/assets/80227900/d4e90a7e-5404-4616-96fc-f8f45452b621">
 	<p>plus버튼 클릭 시 data 추가</p>
 	<p>내용 입력 후 create now 버튼 클릭</p>
 	<p>data가 추가된 것을 확인할 수 있음. 수정 및 삭제도 가능</p>
